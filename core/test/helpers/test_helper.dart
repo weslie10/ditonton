@@ -1,14 +1,12 @@
-import 'package:ditonton/data/datasources/db/database_helper.dart';
-import 'package:ditonton/data/datasources/movie_local_data_source.dart';
-import 'package:ditonton/data/datasources/movie_remote_data_source.dart';
-import 'package:ditonton/domain/repositories/movie_repository.dart';
+import 'package:core/data/datasources/db/database_helper.dart';
+import 'package:core/data/datasources/local/local_data_source.dart';
+import 'package:core/domain/repositories/watchlist_repository.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/annotations.dart';
 
 @GenerateMocks([
-  MovieRepository,
-  MovieRemoteDataSource,
-  MovieLocalDataSource,
+  WatchlistRepository,
+  LocalDataSource,
   DatabaseHelper,
 ], customMocks: [
   MockSpec<http.Client>(as: #MockHttpClient)

@@ -1,14 +1,12 @@
 import 'dart:convert';
 
-import 'package:ditonton/data/models/genre_model.dart';
-import 'package:ditonton/domain/entities/genre.dart';
+import 'package:core/data/models/genre_model.dart';
+import 'package:core/domain/entities/genre.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import '../../../core/test/json_reader.dart';
 
 void main() {
   final tGenreModel = GenreModel(
-    id: 1,w
+    id: 1,
     name: "Action",
   );
 

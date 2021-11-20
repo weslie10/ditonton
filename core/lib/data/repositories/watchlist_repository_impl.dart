@@ -14,7 +14,6 @@ class WatchlistRepositoryImpl implements WatchlistRepository {
   @override
   Future<bool> isAddedToWatchlist(int id, String type) async {
     final result = await localDataSource.getMovieById(id, type);
-    print(result);
     return result != null;
   }
 

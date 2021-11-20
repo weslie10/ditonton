@@ -54,7 +54,6 @@ class SeriesRemoteDataSourceImpl implements SeriesRemoteDataSource {
         await client.get(Uri.parse('$BASE_URL/tv/$id/season/$season?$API_KEY'));
 
     if (response.statusCode == 200) {
-      print(json.decode(response.body));
       return EpisodeResponseModel.fromJson(json.decode(response.body));
     } else {
       throw ServerException();
