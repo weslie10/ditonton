@@ -1,0 +1,53 @@
+{
+    "_id": "1",
+    "air_date": "2020-01-01",
+    "episodes": [
+        {
+        "air_date": "2020-01-01",
+        "episode_number": 1,
+        "crew": [
+            {
+                "job": "Casting",
+                "department": "Production",
+                "credit_id": "60662e71bc2cb300588782c4",
+                "adult": false,
+                "gender": 0,
+                "id": 1469340,
+                "known_for_department": "Production",
+                "name": "Bonnie Zane",
+                "original_name": "Bonnie Zane",
+                "popularity": 0.6,
+                "profile_path": null
+            }
+        ],
+        "guest_stars": [
+            {
+                "character": "Luke Wheeler / Logan Wheeler",
+                "credit_id": "616dce28160e73004321505f",
+                "order": 8,
+                "adult": false,
+                "gender": 2,
+                "id": 50398,
+                "known_for_department": "Acting",
+                "name": "Devon Sawa",
+                "original_name": "Devon Sawa",
+                "popularity": 5.398,
+                "profile_path": "/yvMbpZ0UFQ1IBwlWm8quCA6fNc5.jpg"
+            }
+        ],
+        "id": 1,
+        "name": "name",
+        "overview": "overview",
+        "production_code": "",
+        "season_number": 1,
+        "still_path": "stillPath",
+        "vote_average": 1,
+        "vote_count": 1
+        }
+    ],
+    "name": "name",
+    "overview": "overview",
+    "id": 1,
+    "poster_path": "posterPath",
+    "season_number": 1
+}
