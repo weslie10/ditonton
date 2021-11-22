@@ -24,6 +24,10 @@ class SeriesRepositoryImpl implements SeriesRepository {
       return Left(ServerFailure(''));
     } on SocketException {
       return Left(ConnectionFailure('Failed to connect to the network'));
+    } on TlsException catch (e) {
+      return Left(ServerFailure('Certificated not valid\n${e.message}'));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -36,6 +40,10 @@ class SeriesRepositoryImpl implements SeriesRepository {
       return Left(ServerFailure(''));
     } on SocketException {
       return Left(ConnectionFailure('Failed to connect to the network'));
+    } on TlsException catch (e) {
+      return Left(ServerFailure('Certificated not valid\n${e.message}'));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -49,6 +57,10 @@ class SeriesRepositoryImpl implements SeriesRepository {
       return Left(ServerFailure(''));
     } on SocketException {
       return Left(ConnectionFailure('Failed to connect to the network'));
+    } on TlsException catch (e) {
+      return Left(ServerFailure('Certificated not valid\n${e.message}'));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -61,6 +73,10 @@ class SeriesRepositoryImpl implements SeriesRepository {
       return Left(ServerFailure(''));
     } on SocketException {
       return Left(ConnectionFailure('Failed to connect to the network'));
+    } on TlsException catch (e) {
+      return Left(ServerFailure('Certificated not valid\n${e.message}'));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -73,6 +89,10 @@ class SeriesRepositoryImpl implements SeriesRepository {
       return Left(ServerFailure(''));
     } on SocketException {
       return Left(ConnectionFailure('Failed to connect to the network'));
+    } on TlsException catch (e) {
+      return Left(ServerFailure('Certificated not valid\n${e.message}'));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -85,6 +105,10 @@ class SeriesRepositoryImpl implements SeriesRepository {
       return Left(ServerFailure(''));
     } on SocketException {
       return Left(ConnectionFailure('Failed to connect to the network'));
+    } on TlsException catch (e) {
+      return Left(ServerFailure('Certificated not valid\n${e.message}'));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -97,6 +121,10 @@ class SeriesRepositoryImpl implements SeriesRepository {
       return Left(ServerFailure(''));
     } on SocketException {
       return Left(ConnectionFailure('Failed to connect to the network'));
+    } on TlsException catch (e) {
+      return Left(ServerFailure('Certificated not valid\n${e.message}'));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
     }
   }
 }

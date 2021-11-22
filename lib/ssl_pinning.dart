@@ -27,7 +27,7 @@ class SSLPinning {
       if (isTestMode) {
         bytes = utf8.encode(_certificate);
       } else {
-        bytes = (await rootBundle.load('certificate/certerificates.pem'))
+        bytes = (await rootBundle.load('certificates/certificates.pem'))
             .buffer
             .asUint8List();
       }

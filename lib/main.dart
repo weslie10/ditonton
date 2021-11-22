@@ -2,8 +2,8 @@ import 'package:about/about_page.dart';
 import 'package:core/core.dart';
 import 'package:core/presentation/pages/watchlist_movies_page.dart';
 import 'package:core/presentation/bloc/watchlist/watchlist_bloc.dart';
+import 'package:ditonton/ssl_pinning.dart';
 import 'package:firebase_core/firebase_core.dart';
-// import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -39,8 +39,8 @@ import 'package:series/presentation/pages/top_rated_series_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  await SSLPinning.init();
   di.init();
-  // FirebaseCrashlytics.instance.crash();
   runApp(MyApp());
 }
 
